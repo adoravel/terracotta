@@ -19,4 +19,4 @@ dependencyResolutionManagement {
     }
 }
 
-include(":terracotta-core")
+include(":terracotta-core", ":terracotta-loom")

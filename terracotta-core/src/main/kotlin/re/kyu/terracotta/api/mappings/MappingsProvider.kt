@@ -1,6 +1,7 @@
 package re.kyu.terracotta.api.mappings
 
 import org.gradle.api.Project
+import org.gradle.api.artifacts.Dependency
 import re.kyu.terracotta.api.loader.LoaderCapability
 import re.kyu.terracotta.api.repository.RepositoryContributor
 import re.kyu.terracotta.api.version.MinecraftVersion
@@ -29,5 +30,5 @@ public interface MappingsProvider<C> {
     public fun Project.resolveDependency(
         context: C,
         version: MinecraftVersion
-    ): Any
+    ): Dependency
 }
